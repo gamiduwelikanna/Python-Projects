@@ -9,6 +9,7 @@ def roll():
 
 value = roll()
 print(value)
+print("Welcome to the PIG Game!")
 
 
 while True:
