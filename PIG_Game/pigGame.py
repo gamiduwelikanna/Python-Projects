@@ -10,6 +10,7 @@ def roll():
 value = roll()
 print(value)
 print("Welcome to the PIG Game!")
+print("The objective of the game is to be the first player to reach 50 points.")
 
 
 while True:
