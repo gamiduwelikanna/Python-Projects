@@ -1,7 +1,7 @@
 with open("text.txt", "r") as f:
     text= f.read()
 
-words = []
+words = set()
 start_of_word = -1
 
 taregt_start = "<"
@@ -15,3 +15,16 @@ for i , char in enumerate(text):
         word = text[start_word:i+1]
         words.add(word)
         start_word = -1
+
+
+answers = {}
+ 
+for word in words:
+    answer = input("Enter a word for " + word+ ":")
+    answers[word] = answer
+
+for word in words:
+    text = text.replace(word, answers[word])
+
+
+print(text)
