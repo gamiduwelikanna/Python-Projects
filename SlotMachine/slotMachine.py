@@ -1,3 +1,5 @@
+MAX_LINES = 3
+
 def deposit():
     while True:
         amount = input("Enter the amoun to deposit: ")
@@ -5,7 +7,7 @@ def deposit():
             amount = int(amount)
             if amount > 0:
                 break
-            else:
+            else:  
                 print("Amount must be bigger than 0")
         else:
             print("Amount must be a number")
